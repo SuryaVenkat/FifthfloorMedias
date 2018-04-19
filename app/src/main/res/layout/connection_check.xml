@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/btnclose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/close"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/txtalertinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/btnclose"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtalertinfo"
+            android:id="@+id/btn_retry"
+            android:text="Retry"
+            android:gravity="center"
+            android:background="@drawable/style_filled"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
